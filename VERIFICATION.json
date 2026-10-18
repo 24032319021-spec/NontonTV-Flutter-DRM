@@ -1,0 +1,123 @@
+{
+  "version": "0.6.2+10",
+  "display_name": "SitorusTV",
+  "modified_files": [
+    "README.md",
+    "lib/app.dart",
+    "lib/core/theme/app_theme.dart",
+    "lib/features/channels/data/m3u_parser.dart",
+    "lib/features/channels/data/nontontv_json_parser.dart",
+    "lib/features/channels/data/playlist_repository.dart",
+    "lib/features/channels/domain/channel.dart",
+    "lib/features/channels/presentation/home_controller.dart",
+    "lib/features/channels/presentation/home_screen.dart",
+    "lib/features/player/native/native_exoplayer_controller.dart",
+    "lib/features/player/presentation/player_screen.dart",
+    "lib/features/settings/presentation/settings_screen.dart",
+    "lib/storage/app_storage.dart",
+    "pubspec.yaml"
+  ],
+  "added_files": [
+    "PASANG_UPDATE_ID.txt",
+    "UPGRADE_NOTES_ID.md",
+    "android_ui/TvWindowUi.kt",
+    "android_ui/res/drawable/sitorustv_launch_background.xml",
+    "android_ui/res/mipmap-anydpi/ic_sitorustv.xml",
+    "android_ui/res/mipmap-anydpi-v26/ic_sitorustv.xml",
+    "android_ui/res/values/sitorustv_launch.xml",
+    "android_ui/res/values-v31/sitorustv_launch.xml",
+    "assets/images/sitorustv_loading.png",
+    "assets/images/sitorustv_logo.png",
+    "assets/images/sitorustv_menu.png",
+    "lib/core/branding/brand_assets.dart",
+    "lib/core/platform/tv_display.dart",
+    "lib/features/channels/data/playlist_utils.dart",
+    "lib/features/channels/domain/playlist_result.dart",
+    "lib/features/channels/presentation/tv_home_metrics.dart",
+    "lib/features/player/presentation/player_interaction_layer.dart",
+    "scripts/apply_sitorustv_ui.dart",
+    "scripts/check_player_boundary.py",
+    "scripts/verify.ps1",
+    "scripts/verify.sh",
+    "test/android_ui_patch_test.dart",
+    "test/fixtures/player_baseline_sha256.json",
+    "test/home_controller_test.dart",
+    "test/home_screen_test.dart",
+    "test/player_interaction_layer_test.dart",
+    "test/playlist_recovery_test.dart",
+    "test/reference_layout_test.dart",
+    "test/support/fakes.dart"
+  ],
+  "reference_photo": {
+    "file": "photo_2026-10-06_03-01-30.jpg",
+    "size": [
+      1280,
+      576
+    ],
+    "landscape_columns": 5,
+    "sidebar_width_fraction": 0.25,
+    "header_px": 76,
+    "row_height_px": 232,
+    "logo_px": 136
+  },
+  "assets": [
+    {
+      "path": "assets/images/sitorustv_loading.png",
+      "sha256": "dd8fc6ac7540e441ece58ade6bdd7cda26439d25f4dc8623f0bdc504d0e1b89e",
+      "exact_copy_of_user_attachment": false,
+      "optimization": "lossless PNG recompression; dimensions/pixels preserved"
+    },
+    {
+      "path": "assets/images/sitorustv_logo.png",
+      "sha256": "15326aefddedc0b27246375c73e6d7b6e8e066602b0ddf9d323884f92d4f6177",
+      "exact_copy_of_user_attachment": false,
+      "optimization": "lossless PNG recompression; dimensions/pixels preserved"
+    },
+    {
+      "path": "assets/images/sitorustv_menu.png",
+      "sha256": "3469fcaa38d36f14bece17d5a790c62f4105459bf17fb582d819c308c13b1a6c",
+      "exact_copy_of_user_attachment": false,
+      "optimization": "lossless PNG recompression; dimensions/pixels preserved"
+    }
+  ],
+  "checks": {
+    "dart_structure": "PASS: delimiters/local imports checked; not compilation",
+    "android_xml": "PASS: five UI resource XML files parsed",
+    "asset_integrity": "PASS: three PNG assets losslessly recompressed; dimensions preserved",
+    "protected_source": "PASS: protected native player files unchanged; documented bridge baseline preserved",
+    "installed_activity_change": "UI updater adds setFullscreen handler; player methods and registration preserved in source transformation",
+    "ui_hook_text_reversal": "PASS: inserted hook text can be removed to restore original MainActivity exactly; Dart updater not executed",
+    "flutter_analyze": "NOT RUN: Flutter SDK unavailable in this environment",
+    "flutter_tests": "NOT RUN: Flutter SDK unavailable in this environment",
+    "dart_updater_execution": "NOT RUN: SDK unavailable",
+    "android_kotlin_apk_compile": "NOT RUN: SDK unavailable",
+    "device_playback_touch_and_render": "NOT RUN; real Android confirmation needed",
+    "shell_syntax": "PASS",
+    "zip_integrity": "PASS: package created and CRC-tested after source update"
+  },
+  "original_archive_sha256": "bb58614b566efb2d421a23fd5b2a68e6de6797b3277c94e5ec0e7dbda71c689d",
+  "previous_user_log": {
+    "version": "0.5.0+6",
+    "test_summary": "+38 -3",
+    "named_test": "bad percent escapes in headers do not abort the whole playlist",
+    "build_error": "PlatformViewHitTestBehavior is not defined in player_screen.dart",
+    "limitations": "Failure assertions/stack traces for the three test failures were not supplied. Do not interpret this patch as proof that all tests pass."
+  },
+  "required_update": [
+    "lib/",
+    "assets/",
+    "test/",
+    "scripts/",
+    "android_ui/",
+    "pubspec.yaml"
+  ],
+  "required_android_step": "dart run scripts/apply_sitorustv_ui.dart",
+  "release_notes_0_6_2": [
+    "Playlist URL is entered directly in the PLAYLIST tab; no URL/name popup.",
+    "Playlist name is derived automatically from the URL host.",
+    "Random User-Agent checkbox replaced by a persisted custom User-Agent text input.",
+    "Playlist-provided User-Agent keeps priority over the custom fallback.",
+    "file_picker dependency removed from the active UI to reduce package/plugin overhead.",
+    "PNG branding assets losslessly recompressed to reduce package size."
+  ]
+}

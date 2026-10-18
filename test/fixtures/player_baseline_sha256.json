@@ -1,0 +1,12 @@
+{
+  "scripts/bootstrap_android.ps1": "ebfc83a45c2c4ced25cd206e601b4aa090318c83c3bed51e0533e569047cf89a",
+  "scripts/bootstrap_android.sh": "1533d3a16f52589da150b539927a27ccdd947232d688b24862cfd18b7cb2ce33",
+  "scripts/build_media3_ffmpeg.sh": "f0d3ce086cc136d183e28f58096c485167badf72be0f8657248d810566133247",
+  "native_android/app/libs/README.md": "f99cb70ee2b73f51ccfdd99f0c4dc9b752333ce78bd466ac804d9be8a8e59c3d",
+  "native_android/app/src/main/AndroidManifest.xml": "35396642b3bd633e226995f0e4db52bfe5ebd524552573e9c662c39d18158bf0",
+  "native_android/app/src/main/kotlin/com/example/nontontv_flutter/MainActivity.kt": "4e7c13d23864c25412068430bee781ad4a8c7a45e8fdb824d9c7d9644967f2d8",
+  "native_android/app/src/main/kotlin/com/example/nontontv_flutter/BootReceiver.kt": "1566bc73cf11b086d5522b5c63074fd8b1a3b6e01f832dc4aa4074686e143aa6",
+  "native_android/app/src/main/kotlin/com/example/nontontv_flutter/player/NontonTvPlayerViewFactory.kt": "2b4212e65dbfd4e7ef1b85232aa93f737f734e14518dfeae0569a95befe35c67",
+  "native_android/app/src/main/kotlin/com/example/nontontv_flutter/player/NontonTvPlayerView.kt": "25236757bf1656a9c93628ecc5f4cb2677f74f81fa2b37c59b6e94a80c437989",
+  "lib/features/player/native/native_exoplayer_controller.dart": "d515b9a12d7eb1c1b26fa77f697a972394d3867d899ed742025ece4381ad5b01"
+}

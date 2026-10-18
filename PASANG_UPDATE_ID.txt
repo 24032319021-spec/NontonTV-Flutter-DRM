@@ -1,0 +1,37 @@
+SitorusTV 0.6.2 — gambar baru + layout referensi + layar penuh
+
+1. Hentikan aplikasi/debug lama.
+2. Ekstrak ZIP ke folder sementara.
+3. Salin folder berikut dari NontonTV-Flutter-DRM hasil ekstrak ke proyek lama:
+
+lib
+assets
+test
+scripts
+android_ui
+pubspec.yaml
+
+4. PERTAHANKAN folder android yang sudah berjalan.
+   Jangan menjalankan bootstrap Android untuk update ini.
+5. Buka terminal VS Code pada D:\NontonTV-Flutter-DRM, jalankan:
+
+flutter pub get
+dart run scripts/apply_sitorustv_ui.dart
+flutter analyze
+flutter test --reporter expanded 2>&1 | Tee-Object -FilePath hasil-test.txt
+flutter run
+
+Perintah apply_sitorustv_ui wajib untuk mengganti ikon/nama Android,
+splash, dan mengaktifkan fullscreen pada Android modern. Tunggu pesan
+UI SitorusTV terpasang sebelum menjalankan aplikasi. Skrip mempertahankan
+Gradle, applicationId, dan kode player. Jangan hanya hot reload.
+
+Akses Tambah playlist / Favorit / Semua: ketuk logo SitorusTV di kiri atas.
+Tambah playlist juga tersedia di halaman Pengaturan.
+Tekan lama channel untuk mengubah favorit.
+
+Gambar menu, loading dan logo disalin dari file Anda. Beranda landscape
+memakai lima kolom dengan ukuran proporsional dari foto 1280 x 576.
+
+SDK tidak tersedia di lingkungan revisi; analyzer, tes Flutter dan build
+patch ini belum dijalankan. Jika masih gagal, kirim hasil-test.txt lengkap.

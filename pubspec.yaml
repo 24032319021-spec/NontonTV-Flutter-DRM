@@ -1,0 +1,25 @@
+name: nontontv_flutter
+description: Flutter reimplementation of the open-source NontonTV Android TV/STB app with a native Media3 ExoPlayer bridge.
+publish_to: none
+version: 0.6.2+11
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/sitorustv_menu.png
+    - assets/images/sitorustv_loading.png
+    - assets/images/sitorustv_logo.png
